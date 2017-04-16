@@ -19,13 +19,16 @@ description: 使用gitpage搭配jekyll建立部落格之過程
 所以打算把一些過程紀錄下來。
 <br>
 
-相關參考：
-**[Jekyll (1) ](http://pigggggggggggggy.logdown.com/posts/2016/02/24/546001)**
+相關參考：<br>
+**[Jekyll (1) ](http://pigggggggggggggy.logdown.com/posts/2016/02/24/546001)**<br>
 - 初始流程及環境建置可參考此篇<br>
+
 **[Creating and Hosting a Personal Site on GitHub](http://jmcglone.com/guides/github-pages/)**
 - 詳細流程可參考此篇<br>
+
 **[Themes](https://jekyllrb.com/docs/themes/)**
 - theme深入介紹<br>
+
 **[如何把Google Blogger搬到Github pages ](http://blog.kenyang.net/2015/11/26/move-blogger-to-github)**
 - 主要可參考其引用現有theme的方法，但須注意第二步有個指令打錯，應改為<br>
 git remote set-url origin git@github.com:USERNAME/USERNAME.github.io.git<br>
