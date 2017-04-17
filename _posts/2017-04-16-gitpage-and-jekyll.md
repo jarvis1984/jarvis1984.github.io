@@ -2,7 +2,7 @@
 layout: post
 title: "使用gitpage與jekyll建立部落格"
 date: 2017-04-16 23:30:00
-tags: forntend
+tags: web
 description: 使用gitpage搭配jekyll建立部落格之過程
 ---
 
