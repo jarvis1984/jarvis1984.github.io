@@ -48,10 +48,10 @@ static const struct file_operations i2cdev_fops = {
 - 在i2cdev_ioctl_smbus中會先呼叫copy_from_user讀取使用者參數並進行相關處理，然後再呼叫i2c_smbus_xfer
 - i2c_smbus_xfer定義在i2c-core.c，此時會判斷抽象層adapter是否實現smbus_xfer；若否則呼叫i2c_smbus_xfer_emulated，而i2c_adapter在i2c.h中，其結構如下
 ```clike=
-/*
- * i2c_adapter is the structure used to identify a physical i2c bus along
- * with the access algorithms necessary to access it.
- */
+ /*
+    i2c_adapter is the structure used to identify a physical i2c bus along
+    with the access algorithms necessary to access it.
+  */
 struct i2c_adapter {
 	struct module *owner;
 	unsigned int class;		  /* classes to allow probing for */
@@ -75,12 +75,12 @@ struct i2c_adapter {
 ```
 - i2c_algorithm結構定義則如下
 ```clike=
-/*
- * The following structs are for those who like to implement new bus drivers:
- * i2c_algorithm is the interface to a class of hardware solutions which can
- * be addressed using the same bus algorithms - i.e. bit-banging or the PCF8584
- * to name two of the most common.
- */
+ /* 
+    The following structs are for those who like to implement new bus drivers:
+    i2c_algorithm is the interface to a class of hardware solutions which can
+    be addressed using the same bus algorithms - i.e. bit-banging or the PCF8584
+    to name two of the most common. 
+  */
 struct i2c_algorithm {
 	/* If an adapter algorithm can't do I2C-level access, set master_xfer
 	   to NULL. If an adapter algorithm can do SMBus access, set
